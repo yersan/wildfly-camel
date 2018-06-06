@@ -2350,6 +2350,9 @@ org/apache/cxf/databinding/stax
 org/apache/cxf/endpoint
 org/apache/cxf/endpoint/dynamic
 org/apache/cxf/ext
+org/apache/cxf/ext/logging
+org/apache/cxf/ext/logging/event
+org/apache/cxf/ext/logging/slf4j
 org/apache/cxf/extension
 org/apache/cxf/feature
 org/apache/cxf/feature/transform

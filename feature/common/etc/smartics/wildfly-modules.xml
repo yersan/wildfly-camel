@@ -256,13 +256,10 @@
         <include artifact=":commons-logging" />
     </module>
 
-    <module name="org.apache.commons.pool" skip="true">
-        <include artifact="commons-pool:commons-pool" />
-    </module>
-
     <module name="org.apache.cxf" skip="true">
         <include artifact=":cxf-api" />
         <include artifact=":cxf-core" />
+        <include artifact=":cxf-rt-features-logging"/>
     </module>
 
     <module name="org.apache.cxf.impl" skip="true">

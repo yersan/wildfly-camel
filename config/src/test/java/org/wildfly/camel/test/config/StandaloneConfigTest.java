@@ -17,7 +17,7 @@ package org.wildfly.camel.test.config;
 
 import static org.wildfly.extension.camel.config.WildFlyCamelConfigPlugin.NS_CAMEL;
 import static org.wildfly.extension.camel.config.WildFlyCamelConfigPlugin.NS_DOMAINS;
-import static org.wildfly.extension.camel.config.WildFlyCamelConfigPlugin.NS_DOMAIN_70;
+import static org.wildfly.extension.camel.config.WildFlyCamelConfigPlugin.NS_DOMAIN_80;
 import static org.wildfly.extension.camel.config.WildFlyCamelConfigPlugin.NS_SECURITY;
 
 import java.io.File;
@@ -52,6 +52,8 @@ public class StandaloneConfigTest extends ConfigTestSupport {
         SAXBuilder jdom = new SAXBuilder();
         Document doc = jdom.build(resurl);
 
+        System.out.println("---- doc = "+ doc);
+
         ConfigPlugin plugin = new WildFlyCamelConfigPlugin();
         ConfigContext context = ConfigSupport.createContext(null, Paths.get(resurl.toURI()), doc);
         plugin.applyStandaloneConfigChange(context, true);
@@ -82,7 +84,7 @@ public class StandaloneConfigTest extends ConfigTestSupport {
         SAXBuilder jdom = new SAXBuilder();
         Document doc = jdom.build(resurl);
 
-        doc.getRootElement().getChild("extensions", NS_DOMAIN_70).setNamespace(Namespace.getNamespace("urn:jboss:domain:99.99"));
+        doc.getRootElement().getChild("extensions", NS_DOMAIN_80).setNamespace(Namespace.getNamespace("urn:jboss:domain:99.99"));
 
         File modifiedConfig = new File("target/standalone-modified.xml");
         outputDocumentContent(doc, new FileOutputStream(modifiedConfig));

@@ -700,6 +700,7 @@
                     <exclude path="OSGI-INF/metatype" />
                     <exclude path="com/sun**" />
                     <exclude path="org/apache/cxf/bus/osgi**" />
+                    <exclude path="org/apache/cxf/ext/logging/osgi" />
                     <exclude path="org/apache/cxf/internal" />
                     <exclude path="org/apache/cxf/tools**" />
                     <exclude path="org/apache/cxf/transport/http/osgi**" />

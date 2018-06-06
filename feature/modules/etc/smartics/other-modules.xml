@@ -1337,6 +1337,13 @@
         </dependencies>
     </module>
 
+    <module name="org.apache.commons.pool">
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact="commons-pool:commons-pool" />
+    </module>
+
     <module name="org.apache.commons.pool2">
         <properties>
             <property name="jboss.api" value="private"/>

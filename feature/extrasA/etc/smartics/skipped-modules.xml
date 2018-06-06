@@ -80,6 +80,10 @@
         <include artifact="commons.net:commons.net" />
     </module>
 
+    <module name="org.apache.commons.pool" skip="true">
+        <include artifact="commons-pool:commons-pool" />
+    </module>
+
     <module name="org.apache.curator" skip="true">
         <include artifact="org.apache.curator:curator-client" />
         <include artifact="org.apache.curator:curator-framework" />
