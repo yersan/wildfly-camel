@@ -18,6 +18,7 @@ aws-cw
 aws-ddb
 aws-ddbstream
 aws-ec2
+aws-iam
 aws-kinesis
 aws-kinesis-firehose
 aws-kms
@@ -73,6 +74,7 @@ elsql
 etcd
 exec
 facebook
+fhir
 file
 flatpack
 fop
@@ -130,6 +132,8 @@ kafka
 kubernetes                                          #deprecated
 kubernetes-config-maps
 kubernetes-deployments
+kubernetes-hpa
+kubernetes-job
 kubernetes-namespaces
 kubernetes-nodes
 kubernetes-persistent-volumes
@@ -156,7 +160,7 @@ milo-server
 mina2
 mllp
 mock
-mongodb
+mongodb                                             #deprecated
 mongodb-gridfs
 mongodb3
 mqtt

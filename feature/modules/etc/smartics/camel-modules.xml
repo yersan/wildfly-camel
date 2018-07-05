@@ -809,10 +809,10 @@
             <include module="org.springframework.boot" />
         </apply-to-dependencies>
         <dependencies>
-            <module name="org.dozer.mapper" export="true">
+            <module name="com.github.dozermapper" export="true">
                 <exports>
-                    <include path="org/dozer/util**" />
-                    <exclude path="org/dozer**" />
+                    <include path="com/github/dozermapper/core/util**" />
+                    <exclude path="com/github**" />
                 </exports>
             </module>
             <module name="org.apache.commons.lang3"/>
@@ -934,6 +934,7 @@
 
     <module name="org.apache.camel.component.fhir">
         <include artifact="org.apache.camel:camel-fhir"/>
+        <include artifact="org.apache.camel:camel-fhir-api"/>
         <apply-to-dependencies skip="true">
             <include module="org.apache.camel.apt"/>
             <include module="org.springframework.boot"/>
@@ -952,6 +953,9 @@
             </module>
             <module name="org.slf4j"/>
         </dependencies>
+        <exports>
+            <exclude path="org/apache/camel/component/fhir/internal" />
+        </exports>
     </module>
 
     <module name="org.apache.camel.component.flatpack">
@@ -1039,18 +1043,17 @@
     </module>
 
     <module name="org.apache.camel.component.geocoder">
-        <include artifact="com.google.code.geocoder-java:geocoder-java" />
+        <include artifact="com.google.maps:google-maps-services" />
         <include artifact="org.apache.camel:camel-geocoder" />
         <apply-to-dependencies skip="true">
             <include module="org.apache.camel.apt" />
             <include module="org.springframework.boot" />
         </apply-to-dependencies>
         <dependencies>
-            <module name="org.apache.commons.httpclient" export="true" />
             <module name="org.slf4j" />
         </dependencies>
         <exports>
-            <include path="com/google/code/geocoder/model" />
+            <include path="com/google/maps/model" />
             <exclude path="com/google**" />
         </exports>
     </module>
@@ -2471,7 +2474,7 @@
             <include module="org.springframework.boot"/>
         </apply-to-dependencies>
         <dependencies>
-            <module name="io.reactivex.rxjava" slot="2.1.16" export="true">
+            <module name="io.reactivex.rxjava" slot="2.2.0" export="true">
                 <exports>
                     <exclude path="io/reactivex/internal**" />
                 </exports>

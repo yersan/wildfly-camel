@@ -11,8 +11,6 @@ boon
 castor              #deprecated
 crypto
 csv
-fhirJson
-fhirXml
 flatpack
 gzip
 hl7

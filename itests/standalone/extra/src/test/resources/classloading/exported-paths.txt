@@ -636,6 +636,7 @@ com/github/dockerjava/jaxrs/util
 com/github/dockerjava/netty
 com/github/dockerjava/netty/exec
 com/github/dockerjava/netty/handler
+com/github/dozermapper/core/util
 com/google/api/client
 com/google/api/client/http
 com/google/api/client/http/apache
@@ -676,7 +677,6 @@ com/google/api/services/gmail
 com/google/api/services/gmail/model
 com/google/api/services/pubsub
 com/google/api/services/pubsub/model
-com/google/code/geocoder/model
 com/google/common
 com/google/common/annotations
 com/google/common/base
@@ -696,6 +696,7 @@ com/google/common/util
 com/google/common/util/concurrent
 com/google/common/xml
 com/google/gson
+com/google/maps/model
 com/google/protobuf
 com/google/protobuf/util
 com/google/thirdparty
@@ -1266,11 +1267,16 @@ io/fabric8/kubernetes/api
 io/fabric8/kubernetes/api/builder
 io/fabric8/kubernetes/api/model
 io/fabric8/kubernetes/api/model/apiextensions
+io/fabric8/kubernetes/api/model/apps
 io/fabric8/kubernetes/api/model/authentication
 io/fabric8/kubernetes/api/model/authorization
+io/fabric8/kubernetes/api/model/batch
 io/fabric8/kubernetes/api/model/extensions
+io/fabric8/kubernetes/api/model/networking
 io/fabric8/kubernetes/api/model/policy
+io/fabric8/kubernetes/api/model/rbac
 io/fabric8/kubernetes/api/model/runtime
+io/fabric8/kubernetes/api/model/storage
 io/fabric8/kubernetes/api/model/validators
 io/fabric8/kubernetes/api/model/version
 io/fabric8/kubernetes/client
@@ -1321,8 +1327,8 @@ io/micrometer/core/instrument/step
 io/micrometer/core/instrument/util
 io/micrometer/core/lang
 io/nats
-io/nats/benchmark
 io/nats/client
+io/nats/client/impl
 io/reactivex
 io/reactivex/annotations
 io/reactivex/disposables
@@ -1701,6 +1707,7 @@ org/apache/camel/component/aws/ddb
 org/apache/camel/component/aws/ddbstream
 org/apache/camel/component/aws/ec2
 org/apache/camel/component/aws/firehose
+org/apache/camel/component/aws/iam
 org/apache/camel/component/aws/kinesis
 org/apache/camel/component/aws/kms
 org/apache/camel/component/aws/lambda
@@ -1816,6 +1823,7 @@ org/apache/camel/component/facebook/data
 org/apache/camel/component/fastjson
 org/apache/camel/component/feed
 org/apache/camel/component/fhir
+org/apache/camel/component/fhir/api
 org/apache/camel/component/file
 org/apache/camel/component/file/remote
 org/apache/camel/component/file/remote/strategy
@@ -1911,6 +1919,7 @@ org/apache/camel/component/jpa
 org/apache/camel/component/jsonvalidator
 org/apache/camel/component/jt400
 org/apache/camel/component/kafka
+org/apache/camel/component/kafka/serde
 org/apache/camel/component/kubernetes
 org/apache/camel/component/kubernetes/cloud
 org/apache/camel/component/kubernetes/cluster
@@ -1919,6 +1928,8 @@ org/apache/camel/component/kubernetes/config_maps
 org/apache/camel/component/kubernetes/consumer
 org/apache/camel/component/kubernetes/consumer/common
 org/apache/camel/component/kubernetes/deployments
+org/apache/camel/component/kubernetes/hpa
+org/apache/camel/component/kubernetes/job
 org/apache/camel/component/kubernetes/namespaces
 org/apache/camel/component/kubernetes/nodes
 org/apache/camel/component/kubernetes/persistent_volumes
@@ -3595,7 +3606,6 @@ org/codehaus/groovy/vmplugin/v5
 org/codehaus/groovy/vmplugin/v6
 org/codehaus/groovy/vmplugin/v7
 org/codehaus/groovy/vmplugin/v8
-org/dozer/util
 org/eclipse/egit/github/core
 org/eclipse/egit/github/core/util
 org/eclipse/jgit

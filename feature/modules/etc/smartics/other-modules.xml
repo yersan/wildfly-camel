@@ -129,6 +129,7 @@
 
     <module name="com.amazon.aws.skipped" skip="true">
         <include artifact="com.amazonaws:aws-java-sdk-acm" />
+        <include artifact="com.amazonaws:aws-java-sdk-acmpca" />
         <include artifact="com.amazonaws:aws-java-sdk-alexaforbusiness" />
         <include artifact="com.amazonaws:aws-java-sdk-api-gateway" />
         <include artifact="com.amazonaws:aws-java-sdk-applicationautoscaling" />
@@ -157,6 +158,7 @@
         <include artifact="com.amazonaws:aws-java-sdk-cognitosync" />
         <include artifact="com.amazonaws:aws-java-sdk-comprehend" />
         <include artifact="com.amazonaws:aws-java-sdk-config" />
+        <include artifact="com.amazonaws:aws-java-sdk-connect" />
         <include artifact="com.amazonaws:aws-java-sdk-costandusagereport" />
         <include artifact="com.amazonaws:aws-java-sdk-costexplorer" />
         <include artifact="com.amazonaws:aws-java-sdk-datapipeline" />
@@ -176,7 +178,9 @@
         <include artifact="com.amazonaws:aws-java-sdk-elasticsearch" />
         <include artifact="com.amazonaws:aws-java-sdk-elastictranscoder" />
         <include artifact="com.amazonaws:aws-java-sdk-emr" />
+        <include artifact="com.amazonaws:aws-java-sdk-eks" />
         <include artifact="com.amazonaws:aws-java-sdk-events" />
+        <include artifact="com.amazonaws:aws-java-sdk-fms" />
         <include artifact="com.amazonaws:aws-java-sdk-gamelift" />
         <include artifact="com.amazonaws:aws-java-sdk-glacier" />
         <include artifact="com.amazonaws:aws-java-sdk-glue" />
@@ -187,6 +191,9 @@
         <include artifact="com.amazonaws:aws-java-sdk-importexport" />
         <include artifact="com.amazonaws:aws-java-sdk-inspector" />
         <include artifact="com.amazonaws:aws-java-sdk-iot" />
+        <include artifact="com.amazonaws:aws-java-sdk-iotanalytics" />
+        <include artifact="com.amazonaws:aws-java-sdk-iot1clickdevices" />
+        <include artifact="com.amazonaws:aws-java-sdk-iot1clickprojects" />
         <include artifact="com.amazonaws:aws-java-sdk-iotjobsdataplane" />
         <include artifact="com.amazonaws:aws-java-sdk-kinesisvideo" />
         <include artifact="com.amazonaws:aws-java-sdk-kms" />
@@ -205,13 +212,16 @@
         <include artifact="com.amazonaws:aws-java-sdk-mediapackage" />
         <include artifact="com.amazonaws:aws-java-sdk-mediastore" />
         <include artifact="com.amazonaws:aws-java-sdk-mediastoredata" />
+        <include artifact="com.amazonaws:aws-java-sdk-mediatailor" />
         <include artifact="com.amazonaws:aws-java-sdk-migrationhub" />
         <include artifact="com.amazonaws:aws-java-sdk-mobile" />
         <include artifact="com.amazonaws:aws-java-sdk-models" />
         <include artifact="com.amazonaws:aws-java-sdk-mq" />
+        <include artifact="com.amazonaws:aws-java-sdk-neptune" />
         <include artifact="com.amazonaws:aws-java-sdk-opsworks" />
         <include artifact="com.amazonaws:aws-java-sdk-opsworkscm" />
         <include artifact="com.amazonaws:aws-java-sdk-organizations" />
+        <include artifact="com.amazonaws:aws-java-sdk-pi" />
         <include artifact="com.amazonaws:aws-java-sdk-pinpoint" />
         <include artifact="com.amazonaws:aws-java-sdk-polly" />
         <include artifact="com.amazonaws:aws-java-sdk-pricing" />
@@ -223,6 +233,7 @@
         <include artifact="com.amazonaws:aws-java-sdk-route53" />
         <include artifact="com.amazonaws:aws-java-sdk-sagemaker" />
         <include artifact="com.amazonaws:aws-java-sdk-sagemakerruntime" />
+        <include artifact="com.amazonaws:aws-java-sdk-secretsmanager" />
         <include artifact="com.amazonaws:aws-java-sdk-serverlessapplicationrepository" />
         <include artifact="com.amazonaws:aws-java-sdk-servermigration" />
         <include artifact="com.amazonaws:aws-java-sdk-servicecatalog" />
@@ -1072,7 +1083,7 @@
         <include artifact="io.opentracing.contrib:opentracing-(.*)" />
     </module>
 
-    <module name="io.reactivex.rxjava" slot="2.1.16" inherit-slot="false">
+    <module name="io.reactivex.rxjava" slot="2.2.0" inherit-slot="false">
         <include artifact="io.reactivex.rxjava2:rxjava" />
         <dependencies>
             <module name="javax.api"/>
@@ -1836,7 +1847,7 @@
         <include artifact="org.codelibs:jhighlight" />
     </module>
 
-    <module name="org.dozer.mapper">
+    <module name="com.github.dozermapper">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>

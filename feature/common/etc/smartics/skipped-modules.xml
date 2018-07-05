@@ -322,6 +322,11 @@
         <include artifact="org.apache.httpcomponents:httpclient-osgi" />
     </module>
 
+    <module name="org.jetbrains.annotations" skip="true">
+        <include artifact="org.jetbrains:annotations" />
+    </module>
+
+
     <module name="org.apache.log4j" skip="true">
         <include artifact="org.apache.log4j:" />
         <include artifact="log4j:" />
